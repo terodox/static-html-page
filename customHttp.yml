@@ -1,0 +1,13 @@
+customHeaders:
+  - pattern: '*.jpg'
+    headers:
+    - key: 'cache-control'
+      value: 'max-age=10, stale-while-revalidate'
+    - key: 'test-custom-header-jpg'
+      value: 'its-working-jpg'
+  - pattern: '*.png'
+    headers:
+    - key: 'cache-control'
+      value: 'max-age=5, stale-while-revalidate'
+    - key: 'test-custom-header-png'
+      value: 'its-working-png'

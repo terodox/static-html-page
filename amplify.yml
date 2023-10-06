@@ -7,4 +7,6 @@ frontend:
   artifacts:
     files:
         - index.html
+        - file.jpg
+        - file.png
     baseDirectory: src
